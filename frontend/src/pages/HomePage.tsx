@@ -33,12 +33,18 @@ export default function HomePage() {
         <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
           Explore and manage your collection of scenic locations, landmarks, and points of interest from around the world.
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex flex-wrap justify-center gap-4">
           <Link
             to="/viewpoints"
             className="px-6 py-3 bg-accent-primary text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
           >
             Browse All
+          </Link>
+          <Link
+            to="/map"
+            className="px-6 py-3 bg-accent-success text-white rounded-lg font-medium hover:bg-green-600 transition-colors"
+          >
+            View Map
           </Link>
           <Link
             to="/viewpoints/new"

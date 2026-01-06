@@ -5,6 +5,7 @@ import ViewPointsPage from './pages/ViewPointsPage';
 import ViewPointDetailPage from './pages/ViewPointDetailPage';
 import AddViewPointPage from './pages/AddViewPointPage';
 import EditViewPointPage from './pages/EditViewPointPage';
+import MapPage from './pages/MapPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/viewpoints/new" element={<AddViewPointPage />} />
           <Route path="/viewpoints/:id" element={<ViewPointDetailPage />} />
           <Route path="/viewpoints/:id/edit" element={<EditViewPointPage />} />
+          <Route path="/map" element={<MapPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
